@@ -55,7 +55,7 @@ try:
     print(f"Image generation initiated: {result}")
 
     # Wait for the generation to complete
-    imagine = sdk.fetch_message(result["message_id"])
+    imagine = sdk.fetch_message(result["messageId"])
     print(f"Image generation result: {imagine}")
 except Exception as error:
     print(f"Error: {error}")
@@ -210,9 +210,9 @@ The `MessageResponse` dictionary contains details about the status and result of
 
 ### Properties
 
-- `message_id` (string): The unique identifier for the message.
+- `messageId` (string): The unique identifier for the message.
 - `prompt` (string): The prompt used for image generation.
-- `original_url` (string, optional): The original image URL.
+- `originalUrl` (string, optional): The original image URL.
 - `uri` (string, optional): The generated image URL.
 - `progress` (int): The progress percentage of the task.
 - `status` (string): The current status of the message. Possible values are:
@@ -220,10 +220,10 @@ The `MessageResponse` dictionary contains details about the status and result of
   - `QUEUED`
   - `DONE`
   - `FAIL`
-- `created_at` (string, optional): The timestamp when the message was created.
-- `updated_at` (string, optional): The timestamp when the message was last updated.
+- `createdAt` (string, optional): The timestamp when the message was created.
+- `updatedAt` (string, optional): The timestamp when the message was last updated.
 - `buttons` (list of strings, optional): The available action buttons for the message.
-- `originating_message_id` (string, optional): The ID of the originating message, if applicable.
+- `originatingMessageId` (string, optional): The ID of the originating message, if applicable.
 - `ref` (string, optional): Reference information provided during the request.
 - `error` (string, optional): The error message, if the task fails.
 
@@ -231,13 +231,13 @@ The `MessageResponse` dictionary contains details about the status and result of
 
 ```python:README.md
 message_response = {
-    "message_id": "abc123",
+    "messageId": "abc123",
     "prompt": "a futuristic cityscape at sunset",
     "uri": "https://cdn.imaginepro.ai/generated-image.jpg",
     "progress": 100,
     "status": "DONE",
-    "created_at": "2023-01-01T00:00:00Z",
-    "updated_at": "2023-01-01T00:05:00Z",
+    "createdAt": "2023-01-01T00:00:00Z",
+    "updatedAt": "2023-01-01T00:05:00Z",
     "buttons": ["U1", "V1"],
     "ref": "custom-reference-id"
 }
