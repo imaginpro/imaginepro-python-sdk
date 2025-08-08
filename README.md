@@ -1,10 +1,10 @@
 # imaginepro-python-sdk
 
 [![PyPI version](https://img.shields.io/pypi/v/imaginepro.svg)](https://pypi.org/project/imaginepro/)
-[![License](https://img.shields.io/pypi/l/imaginepro.svg)](https://github.com/imaginpro/imaginepro-python-sdk/blob/main/LICENSE)
+[![License](https://img.shields.io/pypi/l/imaginepro.svg)](https://github.com/imaginepro/imaginepro-python-sdk/blob/main/LICENSE)
 [![Downloads](https://img.shields.io/pypi/dm/imaginepro.svg)](https://pypi.org/project/imaginepro/)
-[![Build Status](https://img.shields.io/github/workflow/status/imaginpro/imaginepro-python-sdk/CI)](https://github.com/imaginpro/imaginepro-python-sdk/actions)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/imaginpro/imaginepro-python-sdk/blob/main/CONTRIBUTING.md)
+[![Build Status](https://img.shields.io/github/workflow/status/imaginepro/imaginepro-python-sdk/CI)](https://github.com/imaginepro/imaginepro-python-sdk/actions)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/imaginepro/imaginepro-python-sdk/blob/main/CONTRIBUTING.md)
 
 Official Python SDK of [Imaginepro](https://platform.imaginepro.ai/), your professional AI image generation platform with enterprise-grade stability and scalability.
 
