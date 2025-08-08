@@ -5,7 +5,7 @@
 [![Downloads](https://img.shields.io/pypi/dm/imaginepro.svg)](https://pypi.org/project/imaginepro/)
 [![Build Status](https://img.shields.io/github/workflow/status/imaginepro/imaginepro-python-sdk/CI)](https://github.com/imaginpro/imaginepro-python-sdk/actions)
 
-Official Python SDK of [Imaginepro](https://platform.imaginepro.ai/), your professional AI image generation platform with enterprise-grade stability and scalability.
+Official Python SDK of [Imaginepro](https://platform.imaginepro.ai/midjourney-api?utm_source=github), your professional AI image generation platform with enterprise-grade stability and scalability.
 
 Imaginepro offers state-of-the-art AI image generation capabilities with:
 
