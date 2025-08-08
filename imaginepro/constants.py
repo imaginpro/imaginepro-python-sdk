@@ -26,3 +26,17 @@ class Button(str, Enum):
     CANCEL_JOB = 'Cancel Job'  # Cancel job button
     UPSCALE_CREATIVE = 'Upscale (Creative)'  # Upscale button (Creative)
     UPSCALE_SUBTLE = 'Upscale (Subtle)'  # Upscale button (Subtle)
+
+
+class Button:
+    """Button constants for the ImagineProSDK"""
+    UPSCALE_1 = "U1"
+    UPSCALE_2 = "U2"
+    UPSCALE_3 = "U3"
+    UPSCALE_4 = "U4"
+    VARIANT_1 = "V1"
+    VARIANT_2 = "V2"
+    VARIANT_3 = "V3"
+    VARIANT_4 = "V4"
+    REROLL = "🔄"
+    VARY_REGION = "Vary (Region)"

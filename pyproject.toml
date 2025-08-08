@@ -1,26 +1,30 @@
 [build-system]
-requires = ["setuptools>=61.0"]
+requires = ["setuptools>=42", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
 name = "imaginepro"
 version = "0.1.0"
-authors = [
-  { name = "ImaginePro", email = "support@imaginepro.ai" },
-]
-description = "Official Python SDK for ImaginePro, a professional AI image generation platform"
+description = "Official Python SDK for ImagineProAI image generation platform"
 readme = "README.md"
-requires-python = ">=3.7"
+authors = [
+    {name = "ImagineProAI Team", email = "support@imaginepro.ai"}
+]
+license = "MIT"
+license-files = ["LICENSE"]
 classifiers = [
     "Programming Language :: Python :: 3",
-    "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
 ]
+requires-python = ">=3.7"
 dependencies = [
     "requests>=2.25.0",
-    "typing-extensions>=4.0.0",
 ]
 
 [project.urls]
 "Homepage" = "https://github.com/imaginpro/imaginepro-python-sdk"
 "Bug Tracker" = "https://github.com/imaginpro/imaginepro-python-sdk/issues"
+
+[tool.setuptools.packages.find]
+include = ["imaginepro*"]
+exclude = ["test*", "venv*", "__pycache__*", "basic_usage*"]

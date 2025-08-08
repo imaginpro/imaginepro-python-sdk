@@ -198,7 +198,7 @@ from imaginepro import ImagineProSDK, ImagineProSDKOptions
 
 sdk = ImagineProSDK(ImagineProSDKOptions(
     api_key="your-api-key",
-    base_url="https://api.custom-url.com",  # Optional
+    base_url="https://api.imaginepro.ai`",  # Optional
     default_timeout=60,  # Optional, 1 minute
     fetch_interval=1  # Optional, 1 second
 ))

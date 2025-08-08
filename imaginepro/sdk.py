@@ -31,7 +31,11 @@ class ImagineProSDK:
         """
         Generate an image with the given prompt
         """
-        return self._post_request('/api/v1/nova/imagine', self._convert_params(params))
+        response = self._post_request('/api/v1/nova/imagine', self._convert_params(params))
+        # If the response has 'message_id' but not 'id', add 'id' for compatibility
+        if 'message_id' in response and 'id' not in response:
+            response['id'] = response['message_id']
+        return response
 
     def fetch_message_once(self, message_id: str) -> MessageResponse:
         """
@@ -39,7 +43,8 @@ class ImagineProSDK:
         """
         endpoint = f'/api/v1/message/fetch/{message_id}'
         message_status = self._get_request(endpoint)
-        print(f"Message status: {message_status['status']}, progress: {message_status['progress']}")
+        # Remove or comment out this print statement for tests
+        # print(f"Message status: {message_status['status']}, progress: {message_status['progress']}")
         return cast(MessageResponse, message_status)
 
     def fetch_message(
